@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.HomeNewTicketEtapaOne{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    max-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.LogoTitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 13px;
+    color: #0064a2;
+}
+
+.LogoTitulo img{
+    width: 73px;
+    height: 33px;
+}
+
+.LogoTitulo h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Frame6{
+    margin: 21px 21px 22px;
+}
+
+.Frame6 a{
+    display: flex;
+    align-items: center;    
+    gap:11px;
+    color: #407bff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Frame6 img{
+    width: 21px;
+    height: 21px;
+}
+
+.Step{
+    display: none;
+}
+
+.Abertura{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: #407bff;
+    padding: 0px 16px;
+}
+
+.Abertura h1{
+    font-size: 21px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.Abertura p{
+    font-size: 20px;
+    font-weight: 700px;
+    text-align: end;
+}
+
+.Etapa1{
+    width: 100%;
+}
+
+.FormEtapas{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 52px;
+    padding: 0px 16px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0064a2;
+}
+
+.pag1{
+    display: none;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.Setor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2px;
+}
+
+.Categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2px;
+}
+
+.pag2{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.MarketPlace{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    width: 100%;
+}
+
+.Estabelecimento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    width: 100%
+}
+
+.pag3{
+    display: none;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.pag3 form{
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+.Identificador{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    color: #0064a2;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px 16px;
+}
+
+select{
+    width: 100%;
+    height: 42px;
+    color: #0064a2;
+
+}
+
+input{
+    width: 100%;
+    height: 42px;
+}
+
+.Dica{
+    display: flex;
+    gap: 7px;
+    padding: 0px 16px;
+    color: #0064a2;
+}
+
+::placeholder{
+    color: #0064a2;
+}
+
+option{
+    color: #0064a2;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 16px;
+    gap: 50px;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    color: #407BFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+#continuar{
+    width: 100%;
+    height: 47px;
+    background-color: #407BFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+#voltar{
+    width: 100%;
+    height: 47px;
+    background-color: #FFF;
+    color: #407BFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+@media screen and (min-width:992px) {
+
+    header{
+        background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+        max-height: 89px;
+    }
+
+    .HomeNewTicketEtapaOne{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .LogoTitulo img {
+        width: 109px;
+        height: 50px;
+    }
+
+    .LogoTitulo{
+        margin: 17px 23px;
+    }
+
+    .LogoTitulo h1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .Frame6 img{
+        width: 42px;
+        height: 42px;
+    }
+
+    .Frame6 a{
+        font-size: 20px;
+        font-weight: 700px;
+    }
+    .pag1{
+        display: flex;
+    }
+    .pag2{
+        display: flex;
+    }
+    .pag3{
+        display: flex;
+    }
+
+    .StepEtapa{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: space-around;
+        gap: 11px;
+    }
+
+    .Etapas{
+        display: flex;
+        justify-content: space-between;
+        color: #407BFF; 
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .Step{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Step h1{
+        color: #407BFF;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .Step #one{
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background:#407bff;
+        z-index: 1;    
+
+    }
+
+    .Step #two{
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background:#EBEBEB;
+        z-index: 1;    
+
+    }
+
+    .Step #tree{
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background:#EBEBEB;
+        z-index: 1;    
+    }
+
+    .Step .barradeprogresso{
+        position: absolute;
+        height: 10px;
+        width: 95%;
+        background: #EBEBEB;  
+    }
+
+    .barradeprogresso .indicador{
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #407bff;
+        
+    }
+    
+
+    .Etapa1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 70px;
+    }
+    .Abertura{
+        display: none;
+    }
+
+    .Sessão{
+        display: flex;
+        gap: 31px;
+        margin: 0px 30px;
+        justify-content: space-between;
+    }
+
+    section{
+        display: flex;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 36px;
+        flex-direction: column; 
+        justify-content: center;
+        padding: 0px 14px;
+        font-size: 20px;
+        font-weight: 400;
+        align-items: center;
+        border-radius: 24px;
+        background: #F3F3F3;
+    }
+
+    .pag1{
+        color: #a29d00;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    Form{
+        width: 100%;
+    }
+
+    footer{
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 46px 69px;
+    }
+    .cleiton{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 29.5px;
+    }
+    
+    #continuar{
+        width: 228.833px;
+        height: 47px;
+    }
+    
+    #voltar{
+        width: 229px;
+        height: 47px;
+    }
+}

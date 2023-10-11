@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.HomeConsulta{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    max-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.LogoTitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 13px;
+    color: #0064a2;
+}
+
+.LogoTitulo img{
+    width: 73px;
+    height: 33px;
+}
+
+.LogoTitulo h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Frame6{
+    margin: 21px 21px 22px;
+}
+
+.Frame6 a{
+    display: flex;
+    align-items: center;    
+    gap:11px;
+    color: #407bff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Frame6 img{
+    width: 21px;
+    height: 21px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.cabeçalho{
+    display: flex;
+    border-bottom: 1px solid #407BFF;
+    justify-content: space-between;
+    height: 70px;
+    align-items: end;
+    width: 100%;
+}
+
+.cabeçalho p{
+    color: #407BFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+#sair{
+    color: #407BFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    background-color: #FFF;
+    border: none;
+}
+
+
+.Detalhes{
+    display:flex;
+    flex-direction: column;
+    margin: 33px 0px 0px;
+}
+
+.seis{
+    display: flex;
+    gap: 29px;
+    margin-bottom: 35px;
+    flex-direction: column;
+}
+
+.tres{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.TituloDescrição{
+    color: #0064A2;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Descrição{
+    color: #747474;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.linha{
+    display:flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.linhax{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: flex-end;
+}
+
+.copiar{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: #407BFF;
+}
+
+.copiar img{
+ width: 32px;
+ height: 32px;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.buttonsairmodal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    align-items: center;
+    gap: 22px;
+}
+
+.textonotificação{
+    display: flex;
+    justify-content: center;
+    color: #407BFF;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 385px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textonotificação p{
+    display: flex;
+    align-items: center;
+ 
+}
+.buttonsairmodal button{
+    display: flex;
+    border: none;
+    background: #FFF;
+    align-items: center;
+    color: #407BFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.buttonvoltar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons a{
+    max-width: 230px;
+}

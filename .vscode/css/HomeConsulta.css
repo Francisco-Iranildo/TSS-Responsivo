@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.HomeConsulta{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    max-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.LogoTitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 13px;
+    color: #0064a2;
+}
+
+.LogoTitulo img{
+    width: 73px;
+    height: 33px;
+}
+
+.LogoTitulo h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Frame6{
+    margin: 21px 21px 22px;
+}
+
+.Frame6 a{
+    display: flex;
+    align-items: center;    
+    gap:11px;
+    color: #407bff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Frame6 img{
+    width: 21px;
+    height: 21px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.topo{
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+input{
+    width: 100%;
+    min-width: 155px;
+}
+
+::placeholder{
+    color: #C6C6C6;
+    font-size: 14px;
+    font-weight: 400;
+}
+.pesquisa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 31px;
+    margin-bottom: 4px;
+}
+.pesquisa p{
+    color: #407BFF;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.imgpesquisa{
+    display: flex;
+    gap: 7px;
+}
+
+.imgpesquisa img{
+    width: 14px;
+    height: 14px;
+}
+
+.Buscar{
+    display: flex;
+    background-color: #407BFF;
+    align-items: center;
+    justify-content: center ;
+    border: none ;
+    color: #fff;
+    min-width: 37px;
+    height: 30px;
+}
+
+.Buscar p{
+    display: none;
+}
+table{
+    width: 100%;
+}
+
+tr{
+    margin-bottom: 8px;
+}
+
+td{
+    margin: 0px;
+    border: none;
+}
+
+.E-mail{
+    display: none;
+}
+
+.Status{
+    display: none;
+}
+
+.acao{
+    display: none;
+}
+
+.datatexto{
+    display: none;
+}
+.cinza{
+    background-color:#F7F6FE;
+    color: #407BFF;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    height: 56px;
+    text-align: center;
+}
+
+.branco{
+    background-color: #FFFFFF;
+    color: #407BFF;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    height: 56px;
+    text-align: center;
+}
+
+.tituloTabela{
+    background-color: #236290;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    height: 51px;
+}
+
+.tituloTabela td img{
+    padding-left: 13px;
+    height: 16px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+    padding: 0px 16px;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    color: #407BFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.verMais{
+    margin-top: 16px;
+}
+.verMais p{
+    color: #407BFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+#continuar{
+    width: 100%;
+    height: 47px;
+    background-color: #407BFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+#voltar{
+    width: 100%;
+    height: 47px;
+    background-color: #FFF;
+    color: #407BFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.Numerado{
+    display: none;
+}
+
+
+@media screen and (min-width:992px){
+
+    .HomeConsulta{
+        gap: 45px;
+    }
+
+    header{
+        background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+        max-height: 89px;
+    }
+    .LogoTitulo img {
+        width: 109px;
+        height: 50px;
+    }
+
+    .LogoTitulo{
+        margin: 17px 23px;
+    }
+
+    .LogoTitulo h1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .Frame6 img{
+        width: 42px;
+        height: 42px;
+    }
+
+    .Frame6 a{
+        font-size: 20px;
+        font-weight: 700px;
+    }
+    
+    .data{
+        display: none;
+    }
+    .datatexto{
+        display: revert;
+    }
+    .E-mail{
+        display: revert;
+    }
+    
+    .Status{
+        display: revert;
+    }
+    
+    .acao{
+        display: revert;    
+    }
+
+    .verMais p{
+        display: none;
+    }
+    
+    .pesquisa p{
+        color: #407BFF;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .Numerado{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        height: 31px;
+    }
+
+    .Numerado span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 9px;
+        border-radius: 8px;
+        background: #E0E0E0;
+        width: 31px;
+    }
+
+    #Primeiro{
+        background: #407BFF;
+        color: #FFF;
+    }
+
+    .Numerado h1{
+        color: #9E9E9E;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .BuscarLupa{
+        display: flex;
+        align-items: center;   
+        justify-content: center; 
+    }
+    .Buscar p{
+        display: flex;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+        width: 110px;
+        align-items: center;
+        height: 33px;
+        justify-content: center;
+    }
+    .imgpesquisa img {
+        margin-right: 37px;
+        width: 16px;
+        height: 16px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 30px 69px;
+        width: 100%;
+    }
+   .cleiton{
+       display: flex;
+       justify-content: flex-end;
+   }
+   .buttons{
+       display: flex;
+       flex-direction: row-reverse;
+       gap: 29.5px;
+       align-items: center;
+       width: 100%;
+   }
+   
+   .buttons a{
+        align-items: center;
+        width: 100%;
+   }
+   
+   #continuar{
+       width: 228.833px;
+       height: 47px;
+   }
+   
+   #voltar{
+       width: 229px;
+       height: 47px;
+   }
+    
+   /*modal*/
+   
+   dialog{
+        box-shadow: 30px 30px 100px 0px rgba(0, 0, 0, 0.25);
+        border: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 63%;
+        height: 85%;
+   }
+
+   .cabeçalho{
+        display: flex;
+        border-bottom: 1px solid #407BFF;
+        margin: 0px 48px;
+        justify-content: space-between;
+        height: 70px;
+        align-items: end;
+   }
+
+   .cabeçalho p{
+        color: #407BFF;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 13px;
+   }
+
+   #sair{
+        color: #407BFF;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 13px;
+        background-color: #FFF;
+        border: none;
+   }
+
+   .Detalhes{
+        display:flex;
+        flex-direction: column;
+        margin: 48px 51px 0px;
+   }
+
+   .seis{
+        display: flex;
+        gap: 200px;
+        margin-bottom: 35px;
+   }
+
+   .tres{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+   }
+
+   .TituloDescrição{
+        color: #0064A2;
+        font-size: 20px;
+        font-weight: 700;
+   }
+
+   .Descrição{
+        color: #747474;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: justify;
+   }
+
+   .linha{
+        display:flex;
+        flex-direction: column;
+        gap: 2px;
+   }
+   .linhax{
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        align-items: flex-end;
+    }
+
+   .copiar{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: #407BFF;
+    }
+
+   .copiar img{
+     width: 32px;
+     height: 32px;
+    }
+
+    .final{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .buttonsairmodal{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px ; 
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    .textonotificação{
+        display: flex;
+        justify-content: center;
+        color: #407BFF;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 385px;
+        width: 100%;
+    }
+
+    .buttonsairmodal button{
+        display: flex;
+        border: none;
+        background: #FFF;
+        align-items: center;
+        color: #407BFF;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .buttonvoltar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttons a{
+        max-width: 230px;
+    }
+}

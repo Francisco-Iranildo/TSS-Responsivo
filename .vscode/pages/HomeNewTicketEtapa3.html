@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/HomeNewTicketEtapa3.css">
+</head>
+
+<body>
+   <main class="HomeNewTicketEtapaTwo">
+        <header>
+            <div class="LogoTitulo">
+                <img src="../assets/LogoNecta.svg" alt="Logo da Necta.Co">
+                <h1>Suporte Necta</h1>
+            </div>
+            <div class="Frame6">
+                <a href="../pages/Login.html">Sair
+                    <img src="../assets/icon-sair.svg" alt="Imagem de uma porta com uma seta indicando a saida">
+                </a>
+            </div>
+        </header>
+        
+        <div class="Etapa1">
+            <div class="Step">
+                <div class="AberturadeTickets">
+                    <h1>Abertura de Tickets</h1>
+                    <div class="AberturaVersionMobile">
+                        <hr class="custom-hr">
+                        <p class="EtapaMobile">Etapa 5 de 5</p>
+                    </div>
+                </div>
+                <div class="StepEtapa">
+                    <div class="container">
+                        <span  id="one">
+                            <span class="azul" ></span>
+                        </span>
+                        <span  id="two">
+                            <span class="azul"></span>
+                        </span>
+                        <span  id="tree">
+                            <span class="azul" id="cinza"></span>
+                        </span>
+                        <div class="barradeprogresso">
+                            <span class="indicador"></span>
+                        </div>
+                    </div>
+                    <div class="Etapas">
+                        <p>Etapa 1</p>
+                        <p>Etapa 2</p>
+                        <p>Etapa 3</p>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <form method="post">
+                    <div class="containerForm">
+                        <div class="quasela">
+                            <p>Quase lá! Para finalizar por favor</p>
+                            <p>revise os dados do ticket.</p>
+                        </div>
+                        <div class="containerinputs">
+                            <div class="informaçoes">
+                                <p>Informações dos ticket:</p>
+                                <p id="notificadoweb">Você será notificado via e-mail sobre qualquer nova atualização nesse ticket.</p>
+                            </div>
+                            <div class="tres">
+                                <div class="linha">
+                                    <label for="vinculado">E-mail vinculado</label>
+                                    <input type="email" id="vinculado" placeholder="email@zsystems.com.br" disabled>
+                                </div>
+                                <div class="linha">
+                                    <label for="problema">Título do problema
+                                        <img class="imglapis" src="../assets/lapis.svg" alt="imagem de um lapis">
+                                    </label>
+                                    <input type="text" id="problema" placeholder="Erro na página de vendas" disabled>
+                                </div>
+                                <div class="linha">
+                                    <label for="vinculadotwo">2º e-mail vinculado
+                                        <img class="imglapis" src="../assets/lapis.svg" alt="imagem de um lapis">
+                                    </label>
+                                    <input type="text" id="vinculadotwo" placeholder="Nenhum" disabled>
+                                </div>
+                            </div>
+                            <div class="tresx">
+                                <div class="linha">
+                                    <label for="Descrição"> Descrição do problema
+                                        <img class="imglapis" src="../assets/lapis.svg" alt="imagem de um lapis">
+                                    </label>
+                                    <textarea name="Descrição" id="Descrição" cols="30" rows="4" disabled>Não consigo ver a página de vendas durante o uso do sistema bla bla bla não consigo ver a página de vendas durante o uso do sistema bla bla blaão consigo ver a página de bla bla... </textarea>
+                                </div>
+                                <div class="linha" id="ArquivoEvidencia">
+                                    <label for="evidências">Arquivos e evidências
+                                        <img class="imglapis" src="../assets/lapis.svg" alt="imagem de um lapis">
+                                    </label>
+                                    <input type="email" id="evidências" placeholder="X arquivos selecionados" disabled>
+                                </div>
+                                <div class="notificadomobile">
+                                    <p>
+                                        Você será notificado via e-mail sobre qualquer nova atualização nesse ticket.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <div class="cleiton">
+                <div class="buttons">
+                    <a href="../pages/mobilesuceso.html">
+                        <button id="continuar">Concluir</button>
+                    </a>
+                    <a href="../pages/HomeNewTicketEtapa2.html">
+                        <button id="voltar">Voltar</button>
+                    </a>
+                </div>
+            </div>
+            <p>Os campos com (*) são obrigatórios</p>
+        </footer>
+    </main>
+    <script>
+        function abrirSeletorArquivos() {
+            document.getElementById('ArquivoEvidencia').click();
+        }
+
+        function atualizarSpan() {
+            var inputElement = document.getElementById('ArquivoEvidencia');
+            var spanElement = document.getElementById('minhaSpan');
+
+            // Verifica se algum arquivo foi selecionado
+            if (inputElement.files.length > 0) {
+                // Exibe o nome do arquivo no span
+                spanElement.innerText = 'Arquivo selecionado: ' + inputElement.files[0].name;
+            } else {
+                // Se nenhum arquivo foi selecionado, exibe a mensagem padrão
+                spanElement.innerText = 'arraste e solte um arquivo aqui, ou clique para selecionar';
+            }
+        }
+    </script>
+</body>

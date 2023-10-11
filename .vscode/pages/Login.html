@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/Login.css">
+</head>
+<body>
+    <Main class="HomeLogin">
+        <header class="HeaderLogin">
+            <img src="../assets/LogoNecta.svg" alt="Logo da Necta.co">
+            <div class="titulo">
+                <h1>Seja bem-vindo ao</h1>
+                <h2>Sistema de suporte da Necta</h2>
+            </div>
+        </header>
+        <div class="BoxMain">
+            <div class="Imagem">
+                <img src="../assets/ImagemDestaqueHome.svg" alt="imagem representativa">
+            </div>
+            <div class="BoxMainLogin">
+                <form autocomplete="on">
+                    <div class="BoxLoginSenhaEsqSenha">
+                        <div class="BoxLoginSenha">
+                            <p>Preencha as informações para continuar:</p>
+                            <div class="input">
+                                <label for="ilogin">Login</label><br>
+                                <input type="email" name="login" id="ilogin" autocomplete="email" required maxlength="30">
+                            </div>
+                            <div class="input">
+                                <label for="isenha">Senha</label><br>
+                                <input type="password" name="senha" id="iSenha" autocomplete="current-password" required minlength="8" maxlength="15">
+                            </div>
+                        </div>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                </form>
+                <div class="BoxEntrarCadastreSe">
+                    <a href="../pages/Home.html">
+                        <button>Entrar</button>
+                    </a>
+                    <p>Não tem acesso? <a href="#">Cadastre-se!</a></p>
+                </div>
+            </div>  
+        </div>
+    </main>
+   
+</body>
+</html>

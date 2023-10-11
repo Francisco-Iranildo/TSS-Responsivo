@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.MobileSucesso{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    max-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.LogoTitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 13px;
+    color: #0064a2;
+}
+
+.LogoTitulo img{
+    width: 73px;
+    height: 33px;
+}
+
+.LogoTitulo h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Frame6{
+    margin: 21px 21px 22px;
+}
+
+.Frame6 a{
+    display: flex;
+    align-items: center;    
+    gap:11px;
+    color: #407bff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Frame6 img{
+    width: 21px;
+    height: 21px;
+}
+
+.Tela{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 16px;
+    gap: 46.27px;
+}
+
+.imagem{
+    display: flex;
+    width: 100%;
+    max-width: 309.988px;
+    height: 100%;
+    max-height: 255.319px;
+    align-items: center;
+}
+
+.imagem img{
+    width: 100%;
+    max-width: 309.988px;
+    height: 100%;
+    max-height: 255.319px;
+}
+
+.textoRating{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.avaliação{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    width: 100%;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    color: #37474F;
+    text-align: center;
+    gap: 26px; 
+}
+
+.ticket{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Avalie{
+    font-size: 17px;
+    font-weight: 700;
+}
+/*classificação de estrelas*/
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 54px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+    background-image: url('../assets/StarUncolor.svg'); /* Substitua 'star.png' pela imagem da estrela desejada */
+    background-size: cover;
+}
+
+.rating input:checked ~ label {
+    background-image: url('../assets/Star.svg'); /* Substitua 'star-filled.png' pela imagem da estrela preenchida desejada */
+}
+
+/* fim da avaliação*/
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+#continuar{
+    width: 100%;
+    height: 47px;
+    background-color: #407BFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+#voltar{
+    width: 100%;
+    height: 47px;
+    background-color: #FFF;
+    color: #407BFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+
+@media screen and (min-width:992px){
+
+    .MobileSucesso{
+        gap: 90px;
+    }
+
+    header{
+        background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+        max-height: 89px;
+    }
+    .LogoTitulo img {
+        width: 109px;
+        height: 50px;
+    }
+
+    .LogoTitulo{
+        margin: 17px 23px;
+    }
+
+    .LogoTitulo h1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .Frame6 img{
+        width: 42px;
+        height: 42px;
+    }
+
+    .Frame6 a{
+        font-size: 20px;
+        font-weight: 700px;
+    }
+
+    .Tela{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        gap: 99px;
+        padding: 0px 134.24px;
+    }
+    
+    .imagem{
+        max-width: 551.724px;
+        width: 100%;
+        max-height: 454.421px;
+        height: 100%;
+    }
+    .imagem img{
+        max-width: 551.724px;
+        width: 100%;
+        max-height: 454.421px;
+        height: 100%;
+
+    }
+    .textoRating{
+        display: flex;
+        flex-direction: column;
+        gap: 53px;
+    }
+    
+    .buttons{
+        height: 49px;
+    }
+}

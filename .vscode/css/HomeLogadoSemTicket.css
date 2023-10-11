@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.HomeLogadoSemTicket{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    max-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.LogoTitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 13px;
+    color: #0064a2;
+}
+
+.LogoTitulo img{
+    width: 73px;
+    height: 33px;
+}
+
+.LogoTitulo h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Frame6{
+    margin: 21px 21px 22px;
+}
+
+.Frame6 a{
+    display: flex;
+    align-items: center;    
+    gap:11px;
+    color: #407bff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Frame6 img{
+    width: 21px;
+    height: 21px;
+}
+
+.MainLogado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    padding: 0px 16px 48px;
+    width: 100%;
+    height: 100%;
+}
+
+.imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #37474f;
+    font-size: 21px;
+    font-weight: 700;
+    gap: 35px;
+}
+
+.imagem img{
+    width: 343px;
+    height: 286px;
+}
+
+.Titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TextoBotão{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 35px;
+}
+
+.Texto{
+    color: #37474f;
+
+}
+
+.Texto h1{
+    display: none;
+}
+
+.Texto h2{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.Botão{
+    width: 100%;
+}
+
+.Botão button{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #407bff;
+    border: none;
+    width: 100%;
+    height: 47px;
+}
+
+@media screen and (min-width:992px){
+
+    .HomeLogadoSemTicket{
+        display: flex ;
+        gap: 90px;
+    }
+
+    header{
+        background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+        max-height: 89px;
+    }
+
+    .LogoTitulo img {
+        width: 109px;
+        height: 50px;
+    }
+
+    .LogoTitulo{
+        margin: 17px 23px;
+    }
+
+    .LogoTitulo h1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .Frame6 img{
+        width: 42px;
+        height: 42px;
+    }
+
+    .Frame6 a{
+        font-size: 20px;
+        font-weight: 700px;
+    }
+    
+    .Titulo{
+        display: none;
+    }
+    
+    .MainLogado{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 106px;
+        width:100%; 
+        max-width: 1240px;
+        height: 550px;
+        padding: 0px 100px;
+        margin: 0px 0px 120px;
+    }
+    
+    .imagem img{
+        display: flex;
+        width: 100%;
+        max-width: 550px;
+        height: 460px;
+    }
+
+    .TextoBotão{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 313px;
+        height: 174px;
+        align-items: flex-start;
+        gap: 40px;  
+    }
+
+    .Texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: flex-start;
+        gap: 21px;
+    }
+    .Texto h1{
+        display: flex;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .Texto h2{
+        display: flex;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+}

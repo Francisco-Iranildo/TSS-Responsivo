@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/HomeNewTicketEtapa1Mobile3.css">
+</head>
+
+<body>
+   <main class="HomeNewTicketEtapaOne">
+        <header>
+            <div class="LogoTitulo">
+                <img src="../assets/LogoNecta.svg" alt="Logo da Necta.Co">
+                <h1>Suporte Necta</h1>
+            </div>
+            <div class="Frame6">
+                <a href="../pages/Login.html">Sair
+                    <img src="../assets/icon-sair.svg" alt="Imagem de uma porta com uma seta indicando a saida">
+                </a>
+            </div>
+        </header>
+        <div class="Etapa1">
+            <div class="Step">
+                <div>
+                    <h1>Abertura de Tickets</h1>
+                </div>
+                <div class="StepEtapa">
+                    <div class="container">
+                        <span  id="one"></span>
+                        <span  id="two"></span>
+                        <span  id="tree"></span>
+                        <div class="barradeprogresso">
+                            <span class="indicador"></span>
+                        </div>
+                    </div>
+                    <div class="Etapas">
+                        <p>Etapa 1</p>
+                        <p>Etapa 2</p>
+                        <p>Etapa 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Sessão">
+                <Section class="pag1">
+                    <div class="Abertura">
+                        <h1>Abertura de Tickets</h1>
+                        <hr class="custom-hr">
+                        <p class="Etapa">Etapa 1 de 5</p>
+                    </div>
+                    <form action="form.php" method="post">
+                        <div class="FormEtapas">
+                            <div class="Setor">
+                                <label for="InfoSetor">Qual é o setor?*</label>
+                                <select name="Setor" id="InfoSetor">
+                                <option></option>
+                                <option>Suporte Técnico</option>
+                                </select>
+                            </div>
+                            <div class="Categoria">
+                                <label for="InfoCategoria">Qual é a categoria?*</label>
+                                <select name="Categoria" id="InfoCategoria">
+                                <option></option>
+                                <option>Bug</option>
+                               </select>
+                            </div>
+                        </div>
+                    </form>
+                </Section>
+                <Section class="pag2">
+                    <div class="Abertura">
+                        <h1>Abertura de Tickets</h1>
+                        <hr class="custom-hr">
+                        <p class="Etapa">Etapa 2 de 5</p>
+                    </div>
+                    <form action="form.php" method="post">
+                        <div class="FormEtapas">
+                            <div class="MarketPlace">
+                                <label for="MKTplace">Qual o setor?*</label>
+                                <input type="text" name="MTplace" id="MKTplace" placeholder="ELO 7" disabled>
+                            </div>
+                            <div class="Estabelecimento">
+                                <label for="InfoEstabelecimento">Selecione o estabelecimento *</label>
+                                <input type="text" name="estabelecimento" id="Infoestabelecimento" list="SeleçãoEstabelecimento" placeholder="Digiti aqui...">
+                                <datalist id="SeleçãoEstabelecimento">
+                                    <option>mariazinha dos doces</option>
+                                    <option>joaozinho das carnes</option>
+                                    <option>pastelaria luca</option>
+                                    <option>Lojinha de 10</option>
+                                    <option>Isabela presentes</option>
+                                    <option>mario gomas</option>
+                                    <option>feijaozinho de todos os sabores</option>
+                                </datalist> 
+                            </div>
+                        </div>
+                    </form>
+                </Section>
+                <section class="pag3">
+                    <div class="Abertura">
+                        <h1>Abertura de Tickets</h1>
+                        <hr class="custom-hr">
+                        <p class="Etapa">Etapa 3 de 5</p>
+                    </div>
+                    <form action="form.php" method="post">
+                        <div class="Identificador">
+                            <label for="id">Informe o indentificador do pedido:</label>
+                            <input type="text" id="id" placeholder="Informe aqui">
+                        </div>
+                        <div class="Dica">
+                            <img src="../assets/Visto.svg" alt="imagem de um Visto">
+                            <p><strong>Dica:</strong> Encontre o identificador do seu <br> pedido no <strong>detalhe da venda.</strong></p>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="botaoweb">
+                <div class="buttons">
+                    <a href="../pages/HomeNewTicketEtapa2.html">
+                        <button id="continuar">Continuar</button>
+                    </a>
+                    <a href="../pages/Home.html">
+                        <button id="voltar">Voltar</button>
+                    </a>
+                </div>
+            </div>
+            <div class="botaomobile">
+                <div class="buttons">
+                    <a href="../pages/HomeNewTicketEtapa2.html">
+                        <button id="continuar">Continuar</button>
+                    </a>
+                    <a href="../pages/mobilePagina2.html">
+                        <button id="voltar">Voltar</button>
+                    </a>
+                </div>
+            </div>
+            <p>Os campos com (*) são obrigatórios</p>
+        </footer>
+    </main>
+</body>

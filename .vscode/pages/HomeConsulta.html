@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/HomeConsulta.css">
+    <script src="../script.js" defer></script>
+
+</head>
+
+<body>
+   <main class="HomeConsulta">
+        <header>
+            <div class="LogoTitulo">
+                <img src="../assets/LogoNecta.svg" alt="Logo da Necta.Co">
+                <h1>Suporte Necta</h1>
+            </div>
+            <div class="Frame6">
+                <a href="../pages/Login.html">Sair
+                    <img src="../assets/icon-sair.svg" alt="Imagem de uma porta com uma seta indicando a saida">
+                </a>
+            </div>
+        </header>
+        <div class="container">
+            <div class="topo">
+                <div class="pesquisa">
+                    <p>Meus Tickets</p>
+                    <div class="imgpesquisa">
+                        <input type="search" placeholder="Digite o título...">
+                        <div class="BuscarLupa">
+                            <button class="Buscar">
+                                <p>Buscar</p>
+                                <img src="../assets/Vector (Stroke).svg" alt="simbolo de pesquisa">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <table>
+                <tr class="tituloTabela">
+                    <td>Titulo do problema <img src="../assets/bxs_sort-alt.svg"></td>
+                    <td class="data">data de criação <img src="../assets/bxs_sort-alt.svg"></td>
+                    <td class="datatexto">Data de criação <img src="../assets/bxs_sort-alt.svg"></td>
+                    <td class="E-mail">E-mail vinculado<img src="../assets/bxs_sort-alt.svg"></td>
+                    <td class="Status">Status <img src="../assets/bxs_sort-alt.svg"></td>
+                    <td class="acao">Ação<img src="../assets/bxs_sort-alt.svg"></td>
+                </tr>
+                <tr class="cinza">
+                    <td>Titulo do problema 1...</td>
+                    <td class="data">22/10/2023 <a href="../pages/Homeconsultamobile.html"><img src="../assets/proximo.svg"></a></td>
+                    <td class="datatexto">Data de criação</td>
+                    <td class="E-mail">E-mail vinculado</td>
+                    <td class="Status">Em andamento</td>
+                    <td class="acao" id="Acao">Ver  <img src="../assets/Vector.svg" alt="simbolo vizualizar"></td>
+                </tr>
+                <tr class="branco">
+                    <td>Titulo do problema 2...</td>
+                    <td class="data">22/10/2023 <a href="../pages/Homeconsultamobile.html"><img src="../assets/proximo.svg"></a></td>
+                    <td class="datatexto">Data de criação</td>
+                    <td class="E-mail">E-mail vinculado</td>
+                    <td class="Status">Em andamento</td>
+                    <td class="acao">Ver  <img src="../assets/Vector.svg" alt="simbolo vizualizar"></td>
+                </tr>
+                <tr class="cinza">
+                    <td>Titulo do problema 3...</td>
+                    <td class="data">22/10/2023 <a href="../pages/Homeconsultamobile.html"><img src="../assets/proximo.svg"></a></td>
+                    <td class="datatexto">Data de criação</td>
+                    <td class="E-mail">E-mail vinculado</td>
+                    <td class="Status">Em andamento</td>
+                    <td class="acao">Ver  <img src="../assets/Vector.svg" alt="simbolo vizualizar"></td>
+                </tr>
+                <tr class="branco">
+                    <td>Titulo do problema 3...</td>
+                    <td class="data">22/10/2023 <a href="../pages/Homeconsultamobile.html"><img src="../assets/proximo.svg"></a></td>
+                    <td class="datatexto">Data de criação</td>
+                    <td class="E-mail">E-mail vinculado</td>
+                    <td class="Status">Em andamento</td>
+                    <td class="acao">Ver  <img src="../assets/Vector.svg" alt="simbolo vizualizar"></td>
+                </tr>
+                <tr class="cinza">
+                    <td>Titulo do problema 4...</td>
+                    <td class="data">22/10/2023 <a href="../pages/Homeconsultamobile.html"><img src="../assets/proximo.svg"></a></td>
+                    <td class="datatexto">Data de criação</td>
+                    <td class="E-mail">E-mail vinculado</td>
+                    <td class="Status">Em andamento</td>
+                    <td class="acao">Ver  <img src="../assets/Vector.svg" alt="simbolo vizualizar"></td>
+                </tr>
+            </table>
+            <div class="verMais">
+                <p>Ver mais...</p>
+                <div class="Numerado">
+                    <h1>Anterior</h1>
+                    <span id="Primeiro">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <h1>Proximo<h1>
+                </div>
+            </div>
+        </div>
+        <dialog id="modal">
+            <div class="cabeçalho">
+                <p>Detalhes do ticket</p>
+                <button id="sair">x</button>
+            </div>
+            <div class="Detalhes">
+                <div class="separação">
+                    <div class="seis">
+                        <div class="tres">
+                            <div class="linha">
+                                <p class="TituloDescrição">Título do problema</p>
+                                <p class="Descrição">Erro na página de vendas</p>
+                            </div>
+                            <div class="linha">
+                                <p class="TituloDescrição">E-mail vinculado</p>
+                                <p class="Descrição">email@zsystems.com.br</p>
+                            </div>
+                            <div class="linha">
+                                <p class="TituloDescrição">2º E-mail vinculado</p>
+                                <p class="Descrição">email2@zsystems.com.br</p>
+                            </div>
+                        </div>
+                        <div class="tres">
+                            <div class="linha">
+                                <p class="TituloDescrição">Data de criação</p>
+                                <p class="Descrição">10/08/23 as 11:34:12</p>
+                            </div>
+                            <div class="linha">
+                                <p class="TituloDescrição">Status do ticket</p>
+                                <p class="Descrição">Em andamento</p>
+                            </div>
+                            <div class="linhax">
+                                <div>
+                                    <p class="TituloDescrição">ID do ticket</p>
+                                    <p class="Descrição">50e15e50b80b4d63b<br>ad9c478c8559129=...<p>
+                                </div>
+                                <div class="copiar">
+                                    <img src="../assets/copiar.svg" alt="Imagem de duas folhas">
+                                    <p>copiar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="final">
+                        <p class="TituloDescrição">Descrição do problema</p>
+                        <p class="Descrição">
+                            Não consigo ver a página de vendas durante o uso do sistema bla bla bla ão consigo ver a página
+                            de vendas durante o uso do sistema bla bla blaão consigo ver a página de bla bla...
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="buttonsairmodal">
+                    <div class="textonotificação">
+                        <p>Acompanhe as atualizações e resoluções desse ticket por e-mail ou pelo nosso whatsapp</p>
+                    </div>
+                    <div class="buttonvoltar">
+                        <button>Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+        <footer>
+            <div class="buttons">
+                <a href="../pages/HomeNewTicketEtapa1.html">
+                    <button id="continuar">Abrir um  novo ticket</button>
+                </a>
+                <a href="../pages/Home.html">
+                    <button id="voltar">Voltar</button>
+                </a>
+            </div>
+        </footer>
+    </main>
+    <script>
+        const Acao = document.getElementById('Acao');
+        const modal = document.getElementById('modal');
+        const sair = document.getElementById('sair');
+    
+        Acao.addEventListener('click', () => {
+            modal.showModal();
+        });
+    
+        sair.addEventListener('click', () => {
+            modal.close();
+        });
+    </script>
+</body>

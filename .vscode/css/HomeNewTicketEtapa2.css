@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.HomeNewTicketEtapaTwo{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+}
+
+/*informaçoes do header*/
+
+header{
+    width: 100%;
+    height: 100%;
+    max-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.LogoTitulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 13px;
+    color: #0064a2;
+}
+
+.LogoTitulo img{
+    width: 73px;
+    height: 33px;
+}
+
+.LogoTitulo h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Frame6{
+    margin: 21px 21px 22px;
+}
+
+.Frame6 a{
+    display: flex;
+    align-items: center;    
+    gap:11px;
+    color: #407bff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Frame6 img{
+    width: 21px;
+    height: 21px;
+}
+
+.StepEtapa{
+    display: none;
+}
+
+.Abertura{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    color: #407bff;
+    padding: 0px 16px;
+}
+
+.Abertura h1{
+    font-size: 21px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.Abertura p{
+    font-size: 20px;
+    font-weight: 700px;
+    text-align: end;
+}
+
+/* informaçoes abaixo do header*/
+
+.Etapa1{
+    width: 100%;
+}
+
+.AberturadeTickets{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 16px;
+    color: #407BFF;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.AberturadeTickets h1{
+    margin-bottom: 8px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.EtapaMobile{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 8px;
+}
+/*informações dentro da section*/
+
+section{
+    margin: 0px 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.linha{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.linha label{
+    color: #0064A2;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.linha input{
+    border: 1px solid #8C8C8C;
+    background: #FFF;
+    height: 42px;
+    color: #0064A2;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+::placeholder{
+    color: #747474;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#Descriçãoproblema{
+    height: 110px;
+    color: #0064A2;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#ArquivoEvidencia{
+    display: none;
+}
+
+.linha span{
+    display: flex;
+    border: 1px dashed #8C8C8C;
+    background: #FFF;
+    height: 42px;
+    color: #747474;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Xarquivos{
+    display: flex;
+    align-items: center;
+    color: #407BFF;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 15px;
+}
+
+#linhaArquivo{
+    display: flex;
+    gap: 23px;
+}
+
+/*botoes de continuar e voltar*/
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 16px;
+    gap: 50px;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    color: #407BFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+#continuar{
+    width: 100%;
+    height: 47px;
+    background-color: #407BFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+#voltar{
+    width: 100%;
+    height: 47px;
+    background-color: #FFF;
+    color: #407BFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+@media screen and (min-width:992px) {
+
+    .HomeNewTicketEtapaTwo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    header{
+        background: linear-gradient(180deg, #DCDCDC 0%, rgba(255, 255, 255, 0.00) 100%);
+        max-height: 89px;
+    }
+    .LogoTitulo img {
+        width: 109px;
+        height: 50px;
+    }
+
+    .LogoTitulo{
+        margin: 17px 23px;
+    }
+
+    .LogoTitulo h1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .Frame6 img{
+        width: 42px;
+        height: 42px;
+    }
+
+    .Frame6 a{
+        font-size: 20px;
+        font-weight: 700px;
+    }
+
+    /*Informações abaixo do header*/
+        
+    .AberturaVersionMobile{
+        display: none;
+    }
+
+    .Etapa1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 70px;
+    }
+
+    .AberturadeTickets{
+        margin: 25px 0px 0px;
+    }
+
+    .StepEtapa{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: space-around;
+        gap: 11px;
+    }
+
+    .Etapas{
+        display: flex;
+        justify-content: space-between;
+        color: #407BFF; 
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .Step{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 30px;
+    }
+
+    .Step h1{
+        color: #407BFF;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .Step #one{
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+        background:#ffffff;
+        z-index: 1;    
+
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Step #two{
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+        background:#fff;
+        z-index: 1;    
+
+    }
+
+    .Step #tree{
+        width: 71px;
+        height: 71px;
+        border-radius: 50%;
+        background:#fff;
+        z-index: 1;    
+    }
+
+    .azul{
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background: #407BFF;
+        z-index: 2;    
+    }
+
+    #cinza{
+        background:#EBEBEB;
+    }
+    .Step .barradeprogresso{
+        position: absolute;
+        height: 10px;
+        width: 95%;
+        background: #EBEBEB;  
+    }
+
+    .barradeprogresso .indicador{
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        background: #407bff;
+        
+    }
+
+    /*informações da section*/
+
+    section{
+        border-radius: 24px;
+        background: #F3F3F3;
+        display: flex;
+        height: 300px;
+        margin-bottom: 36px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding:30px 35px ;
+        gap: 39px;
+    }
+
+    .containerForm{
+        width: 50%;
+    }
+
+    #minhaSpan{
+        display: flex;
+        align-items: flex-start;
+        height: 66px;
+    }
+    /*botoes de sair e continuar*/
+
+    footer{
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 30px 69px;
+    }
+    .cleiton{
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 29.5px;
+    }
+    
+    #continuar{
+        width: 228.833px;
+        height: 47px;
+    }
+    
+    #voltar{
+        width: 229px;
+        height: 47px;
+    }
+}
